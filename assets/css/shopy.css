@@ -1,0 +1,297 @@
+html, body{
+    height: 100%;
+    background: rgb(244, 246, 248);
+}
+
+section{
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+/* ================================================
+                    home
+==================================================*/
+#afterHome,
+#home{
+    background: #fff;
+}
+#afterHome{
+    border-bottom:1px solid rgb(244, 246, 248);
+}
+/* mail and number */
+.afterNav{
+    padding:25px 0;
+}
+.mailNum a,
+.mailNum span{
+    font-size: .75rem;
+    color: rgb(52, 64, 75);
+    text-decoration: none;
+}
+.mailNum img{
+    margin-right: 3.925%;
+}
+.mailNum a{
+    margin-right: 9%;
+}
+
+/* social list */
+.socialIcon ul{
+    display: inline-block;
+    padding-left: 0;
+    margin:0;
+}
+.socialIcon ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.socialIcon ul li a{
+    color: rgb(52, 64, 75);
+    text-decoration: none;
+    font-size: .75rem;
+}
+
+/* homeNav */
+.homeNav{
+    padding:45px 0;
+}
+.homeNav ul{
+    display: inline-block;
+    padding-left: 0;
+    margin:0;
+}
+.homeNav ul li{
+    display:inline-block;
+    margin-right: 45px;
+}
+.homeNav ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #34404b;
+}
+.homeNav a img{
+    width: 120px;
+    height: 40px;
+}
+.shopyIcon i{
+    margin-left: 28px;
+    color: #34404b;
+    font-size: 1rem;
+}
+/* picture home */
+#insidePicture{
+    padding:12.1% 0;
+}
+#pictureHome{
+    position: relative;
+    width:100%;
+    max-height: 100%;
+}
+#pictureHome img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+#pictureHome .container{
+    position: relative;
+}
+.slider h1{
+    font-size: 3.25rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin-bottom: 4.54%;
+}
+.slider h6{
+    font-size: 1.125rem;
+    color: rgb(60, 71, 81);
+    margin-bottom: 3.24%;
+}
+.slider p{
+    font-size: 1rem;
+    color: rgb(73, 86, 98);
+    margin-bottom: 10.528%;
+}
+.slider h5{
+    font-size: 1.125rem;
+    color: rgb(52, 64, 75);
+}
+.slider h5 span{
+    font-size: 1.125rem;
+    color: rgb(255, 89, 18);
+}
+/* ================================================
+                    arrivals
+==================================================*/
+.fa{
+    margin-right: 18px;
+}
+#newArrivals{
+    padding:6.839% 0;
+}
+.jacket{
+    background-color: #fff;
+    padding:11.77% 0;
+}
+#newArrivals h2{
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: rgb(255, 89, 18);
+    margin-bottom: 3.154%;
+}
+#newArrivals h2 span{
+    color:rgb(52, 64, 75);
+}
+#newArrivals p{
+    font-size: 1rem;
+    color: rgb(73, 86, 98);
+}
+.bottom{
+    margin-bottom: 6.659%;
+}
+.bottom-2{
+    margin-bottom: 7.208%;
+}
+.jacket img{
+    margin-bottom: 12%;
+}
+.jacket p{
+    display: block;
+    font-size: 1.125rem;
+    color: rgb(52, 64, 75);
+    font-weight: 500;
+    margin-bottom: 12%;
+}
+.jacket span{
+    font-size: 1.125rem;
+    color: rgb(255, 89, 18);
+}
+/* =================================== */
+.white{
+    background-color: #fff;
+}
+.bullet{
+    display: inline-block;
+    padding-left: 0;
+    margin:0;
+    width: 2px;
+    height: 2px;
+}
+.bullet li{
+    display: inline-block;
+}
+.bullet li a{
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #34404b;
+}
+/* =================================== 
+                full
+====================================*/
+.pad-right{
+    padding-right: 15px !important;
+}
+/* ============================ */
+#fullWinter{
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+}
+#fullWinter .container,
+#fullWinter .container .row,
+#fullWinter .container .row .full,
+#fullWinter .container .row .price,
+#fullWinter .container .row .adv div{
+    height: 100%;
+}
+#fullWinter .col-md-2{
+    padding-right: 0; 
+}
+#fullWinter .col-md-2{
+    padding-left: 0; 
+}
+#fullWinter .col-md-3{
+    padding-left: 0;
+    padding-right: 0;
+}
+.full{
+    background-color: #fff;
+}
+.full img{
+    margin-right: 7.875%;
+    padding: 5.72% 0;
+}
+.full h3{
+    font-size: 1.375rem;
+    font-weight: 900;
+    color: rgb(52, 64, 75);
+    display: inline-block;
+    margin-bottom: 5.618%;
+    padding-top: 6.32%;
+}
+.full p{
+    font-size: 0.75rem;
+    color: rgb(73, 86, 98);
+    margin:0;
+    padding-bottom: 6.32%;
+}
+.adv{
+    padding-left:15px!important; 
+}
+.adv div{
+    background-color: #fff;
+}
+.price{
+    background-color: #fff;
+}
+.price p{
+    font-size: 1.187rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin: 0;
+    padding: 12% 0;
+}
+.price p span{
+    font-size: 2.375rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+}
+.adv h6{
+    font-size: 1rem;
+    margin-bottom: 3.599%;
+    padding-top: 5%;
+}
+.adv h6 span{
+    color: rgb(255, 89, 18);
+}
+.adv p{
+    font-size: 0.75rem;
+    color: rgba(52, 64, 75, 0.4);
+    letter-spacing: 6px;
+    padding-bottom: 5%;
+}
+/* =================================== 
+                best sale
+====================================*/
+.introBest h4{
+    font-size: 2.25rem;
+    color: rgb(52, 64, 75);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.introBest h4 span{
+    color: rgb(255, 89, 18);
+}
+.introBest p{
+    font-size: 1rem;
+    color: rgb(73, 86, 98);
+    margin:0;
+}
