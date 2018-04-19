@@ -17,6 +17,15 @@ p{
     font-family: 'Roboto', sans-serif;
     display: inline-block;
 }
+.padd-right{
+    padding-right: 0 !important;
+}
+.padd-left{
+    padding-left: 0 !important;
+}
+.pad-right{
+    padding-right: 15px !important;
+}
 /* ================================================
                     home
 ==================================================*/
@@ -37,6 +46,9 @@ p{
     color: rgb(52, 64, 75);
     text-decoration: none;
 }
+.mailNum a:hover{
+    color: rgb(255, 89, 18);
+}
 .mailNum img{
     margin-right: 3.925%;
 }
@@ -52,7 +64,24 @@ p{
 }
 .socialIcon ul li{
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 10px;
+    background-color: #fff;
+    width: 26px;
+    text-align: center;
+    height: 26px;
+    border-radius: 50%;
+}
+.facebook:hover{
+    background-color:rgba(26, 94, 153, .5);
+}
+.twitter:hover{
+    background-color: rgba(0, 172, 237, .5);
+}
+.google:hover{
+    background-color:rgba(211, 72, 54, .5);
+}
+.instagram:hover{
+    background-color:rgba(184, 0, 180, .5);
 }
 .socialIcon ul li a{
     color: rgb(52, 64, 75);
@@ -77,6 +106,9 @@ p{
     text-decoration: none;
     font-size: 1rem;
     color: #34404b;
+}
+.homeNav ul li a:hover{
+    color: rgb(255, 89, 18);
 }
 .homeNav a img{
     width: 120px;
@@ -131,9 +163,6 @@ p{
 /* ================================================
                     arrivals
 ==================================================*/
-.fa{
-    margin-right: 18px;
-}
 #newArrivals{
     padding:6.839% 0;
 }
@@ -196,6 +225,9 @@ p{
 /* =================================== 
                 full
 ====================================*/
+.price .fa{
+    margin-right: 18px;
+}
 .pad-right{
     padding-right: 15px !important;
 }
@@ -212,16 +244,6 @@ p{
 #fullWinter .container .row .adv div{
     height: 100%;
 }
-#fullWinter .col-md-2{
-    padding-right: 0; 
-}
-#fullWinter .col-md-2{
-    padding-left: 0; 
-}
-#fullWinter .col-md-3{
-    padding-left: 0;
-    padding-right: 0;
-}
 .full{
     background-color: #fff;
 }
@@ -234,22 +256,18 @@ p{
     font-weight: 900;
     color: rgb(52, 64, 75);
     display: inline-block;
-    margin-bottom: 5.618%;
-    padding-top: 6.32%;
+    margin-bottom: 18px;
+    padding-top: 15px;
 }
 .full p{
     font-size: 0.75rem;
     color: rgb(73, 86, 98);
     margin:0;
-    padding-bottom: 6.32%;
 }
 .adv{
     padding-left:15px!important; 
 }
 .adv div{
-    background-color: #fff;
-}
-.price{
     background-color: #fff;
 }
 .price p{
@@ -276,11 +294,13 @@ p{
     font-size: 0.75rem;
     color: rgba(52, 64, 75, 0.4);
     letter-spacing: 6px;
-    padding-bottom: 5%;
 }
 /* =================================== 
                 best sale
 ====================================*/
+#bestSale{
+    padding:120px 0;
+}
 .introBest h4{
     font-size: 2.25rem;
     color: rgb(52, 64, 75);
@@ -294,4 +314,208 @@ p{
     font-size: 1rem;
     color: rgb(73, 86, 98);
     margin:0;
+    margin-bottom: 85px;
+}
+/* =======================================
+                bets sales
+========================================== */
+.cardSell{
+    background-color: #fff;
+    padding:35px 0;
+}
+.intoCard h5{
+    font-size: 1.125rem;
+    color: rgb(52, 64, 75);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.intoCard .stars{
+    display: inline-block;
+    margin-right: 55px;
+}
+.intoCard .stars i{
+    color: rgb(255, 89, 18);
+}
+.intoCard span{
+    color: rgb(255, 89, 18);
+    font-weight: 700;
+}
+/* =======================================
+                new letter
+========================================== */
+#newLetter{
+    padding-bottom: 120px;
+}
+#newLetter .row{
+    height: 120px;
+    max-height: 100%;
+}
+.insideLetter{
+    height: 100%;
+}
+.insideLetter h5{
+    font-size: 1.125rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin:0;
+    margin-right: 45px;
+}
+.insideLetter p{
+    font-size: .875rem;
+    font-style: italic;
+    color: rgb(52, 64, 75);
+    margin:0; 
+}
+.insideLetter div{
+    padding: 45px 0;
+}
+.insideLetter .joinp{
+    padding: 34px 0;
+}
+.insideLetter div input{
+    font-size: 0.875rem;
+    color: rgb(124, 135, 145);
+    font-style: italic;
+    border:none;
+    width: 45%;
+}
+.insideLetter img{
+    margin-right: 10px;
+}
+.insideLetter div button{
+    background-color:  rgb(255, 89, 18);
+    border: transparent;
+    padding: 15px 20px;
+    margin-right: 40px;
+}
+.insideLetter div button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+/* =======================================
+                footer
+========================================== */
+#footer{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 40px
+}
+#footer .row{
+    height: 140px;
+}
+#footer .row .col-md-4 div{
+    padding: 30px 0;
+}
+#footer .row .col-md-4 div img{
+    margin-bottom: 20px;
+}
+#footer .col-md-4 p{
+    font-size: 0.875rem;
+    color: rgb(40, 49, 59);
+    display: block;
+    font-weight: 700;
+    margin: 0;
+}
+#footer .col-md-2 ul{
+    padding-left: 0;
+    padding:16px 0;
+    margin-bottom: 0;
+}
+#footer .col-md-2 ul li{
+    margin-bottom: 12px;
+}
+#footer .col-md-2 ul li a{
+    font-size: 0.875rem;
+    color: rgb(40, 49, 59);
+    font-weight: 500;
+    text-decoration: none;
+} 
+#footer .col-md-2 ul li a:hover{
+    color: rgb(255, 89, 18);
+}
+#footer .col-md-2 h5{
+    font-size: 1rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+#footer .col-md-2 div{
+    padding: 37px 0;
+}
+/* =======================================
+==========================================
+                segunda vista 
+==========================================
+========================================== */
+#showProducts{
+    background-color: #fff;
+    padding: 120px 0;
+    border-top:2px solid rgb(244, 246, 248);
+}
+.intoShow h2{
+    font-size: 3.25rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.intoShow h6{
+    font-size: 1.125rem;
+    color: rgb(60, 71, 81);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.intoShow p{
+    font-size: 1rem;
+    color: rgb(73, 86, 98);
+    display: block;
+    margin-bottom: 15px;
+}
+.intoPart span{
+    font-size: 1.125rem;
+    color: rgb(52, 64, 75);
+    font-weight: 500;
+}
+.intoPart ul{
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+.intoPart ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: rgb(52, 64, 75);
+}
+.intoPart h5{
+    font-size: 1.25rem;
+    color: rgb(52, 64, 75);
+    display: block;
+    font-weight: 700;
+}
+.intoPart2 p{
+    font-size: 1.125rem;
+    color: rgb(52, 64, 75);
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+.intoPart2 div{
+    display: inline-block;
+}
+.intoPart2 div i{
+    margin-right: 17px;
+}
+.intoPart2 button{
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(255, 89, 18);
+}
+.intoPart1{
+    margin-bottom: 75px;
 }
