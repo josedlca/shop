@@ -203,6 +203,88 @@ p{
     font-size: 1.125rem;
     color: rgb(255, 89, 18);
 }
+/* =====================================
+                home overlay
+====================================== */
+.home-overlay{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left:0;
+    opacity: 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.jacket:hover .home-overlay{
+    opacity: 1;
+}
+.home-overlay h4{
+    font-size: 1.125rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.home-overlay p{
+    font-size: 14px;
+    color: rgb(52, 64, 75);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.home-overlay hr{
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.colors{
+    padding: 0;
+    margin-bottom: 0;
+    display: block;
+    list-style: none;
+}
+.colors li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.color-1{
+    background-color: rgb(225, 46, 63);
+}
+.color-2{
+    background-color: rgb(52, 64, 75);
+}
+.color-3{
+    background-color: rgb(58, 179, 255);
+}
+.color-4{
+    background-color: rgb(47, 217, 103);
+}
+.img-hover-size{
+    display: block;
+    padding: 30px 0;
+}
+.img-hover-size img{
+    width: 60px;
+    height: 100px;
+    margin-bottom: 0;
+}
+.icons-overlay{
+    display: inline-block;
+}
+.icons-overlay i{
+    margin:0 10px;
+    cursor: pointer;
+}
+.icons-overlay i:hover{
+    color:rgb(255, 89, 18);
+}
+/* =====================================
+        home overlay ends
+====================================== */
 /* =================================== */
 .white{
     background-color: #fff;
@@ -211,15 +293,18 @@ p{
     display: inline-block;
     padding-left: 0;
     margin:0;
-    width: 2px;
-    height: 2px;
+    width: 100%;
+    padding: 18px 0;
 }
 .bullet li{
     display: inline-block;
+    background-color: rgb(255, 89, 18);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 .bullet li a{
     text-decoration: none;
-    border-radius: 50%;
     background-color: #34404b;
 }
 /* =================================== 
@@ -528,7 +613,7 @@ p{
 .filterCard{
     background-color: #fff;
 }
-.filterCard .categories li h4{
+.categories li h4{
     font-size: 1.125rem;
     color: rgb(255, 89, 18);
     font-weight: 900;
@@ -537,11 +622,79 @@ p{
     padding:0;
     list-style: none;
     margin-bottom:0;
-    padding:0 35px;
+    padding:40px 35px;
 }
 .categories li {
     font-size: 1rem;
     color: rgb(52, 64, 75);
     font-weight: 700;
     margin-bottom:30px;
+}
+.categories li:last-child{
+    margin-bottom: 0;
+}
+.priceFilter{
+    padding: 40px 35px;
+}
+.priceFilter h4{
+    display: block;
+    font-size: 1.125rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+.priceFilter .textDiv{
+    display:inline-block;
+    width: 48%;
+}
+.rangeDiv{
+    margin-bottom: 30px;
+}
+.priceFilter .textDiv input{
+    width: 45%;
+    background-color: rgb(237, 240, 242);
+    border:none;
+}
+.priceFilter .textDiv span{
+    margin-right: 10px;
+    font-size: 14px;
+    color: rgb(52, 64, 75);
+    font-weight: 700;
+}
+.sizes-brand{
+    background-color: #fff;
+    padding:40px 35px;
+}
+.sizes-brand ul{
+    padding: 0;
+    list-style: none;
+    margin:0;
+}
+.sizes-brand h4{
+    display: block;
+    font-size: 1.125rem;
+    color: rgb(255, 89, 18);
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+.sizes-brand ul li{
+    font-size: 1rem;
+    color: rgb(52, 64, 75);
+    font-weight: 700;
+    margin-bottom:30px;
+}
+.sizes ul li:last-child{
+    margin-bottom: 0px;
+}
+/* =======================================
+                work with js
+========================================== */
+.owl-carousel .owl-item img {
+     display: initial;
+}
+#deployMore{
+    cursor: pointer;
+}
+.desapear{
+    display:none;
 }

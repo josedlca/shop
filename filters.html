@@ -79,7 +79,7 @@
     <!-- midle slider clothes -->
     <section id="newArrivals">
         <div class="container">
-            <div class="row bottom-2">
+            <div class="row">
                 <div class="col-md-3">
                     <div class="filterCard">
                         <ul class="categories">
@@ -112,8 +112,24 @@
                         <span>100$</span>
                     </div>
                 </div>
-            </div>
-            <div class="row bottom-2">
+                <div class="col-md-3">
+                    <div class="filterCard">
+                        <div class="priceFilter">
+                            <h4>Price Filter</h4>
+                            <div class="rangeDiv text-center">
+                                <input type="range" name="price" id="rangePrice">
+                            </div>
+                            <div class="textDiv">
+                                <span>From</span>
+                                <input type="text" name="from" id="">
+                            </div>
+                            <div class="textDiv">
+                                <span>To</span>
+                                <input type="text" name="to" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-3">
                     <div class="jacket  text-center">
                         <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
@@ -135,8 +151,17 @@
                         <span>100$</span>
                     </div>
                 </div>
-            </div>
-            <div class="row bottom-2">
+                <div class="col-md-3">
+                    <div class="sizes-brand">
+                        <h4>Sizes</h4>
+                        <ul>
+                            <li><input type="checkbox" name="small" id="">Small</li>
+                            <li><input type="checkbox" name="Medium" id="">Medium</li>
+                            <li><input type="checkbox" name="large" id="">Large</li>
+                            <li><input type="checkbox" name="xlarge" id="">XLarge</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="col-md-3">
                     <div class="jacket  text-center">
                         <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
@@ -158,13 +183,22 @@
                         <span>100$</span>
                     </div>
                 </div>
-            </div>
-            <div class="row white">
-                <div class="col-md-12  text-center">
-                    <ul class="bullet">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                <div class="col-md-3">
+                    <div class="sizes-brand">
+                        <h4>Brands</h4>
+                        <ul>
+                            <li><input type="checkbox" name="reebok" id="">Reebok</li>
+                            <li><input type="checkbox" name="addidas" id="">Addidas</li>
+                            <li><input type="checkbox" name="nike" id="">Nike</li>
+                            <li><input type="checkbox" name="active" id="">Active</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-9 text-center">
+                    <ul class="bullet white">
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>
