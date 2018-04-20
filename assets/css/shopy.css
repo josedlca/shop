@@ -539,6 +539,50 @@ p{
     padding: 120px 0;
     border-top:2px solid rgb(244, 246, 248);
 }
+.size-slider-img{
+    width: 55%;
+    height: 100%;
+    max-height: 300px;
+}
+.top-up{
+    top:25px;
+}
+.bot-down{
+    bottom:35px;
+    margin-bottom:0;
+}
+.custom-carousel{
+    height: 100%;
+    text-align: center;
+}
+.custom-carousel-indicators{
+    width: 96px !important;
+    margin-right: 3px ;
+    margin-left: 3px;
+}
+.carousel-indicators li img{
+    position: absolute;
+    transform: translateX(-48px);
+}
+.carousel-indicators li{
+    width: 96px;
+    height: 69px;
+}
+.home-overlay-2{
+    background-color:rgba(255, 89, 18, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left:0;
+    opacity: 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+.custom-carousel-indicators:hover .home-overlay-2{
+    opacity: 1;
+}
 .intoShow h2{
     font-size: 3.25rem;
     color: rgb(255, 89, 18);
@@ -592,9 +636,12 @@ p{
 .intoPart2 div i{
     margin-right: 17px;
 }
+.intoPart2 button a{
+    text-decoration: none;
+    color: #fff;
+}
 .intoPart2 button{
     font-size: 1.125rem;
-    color: #fff;
     font-weight: 500;
     padding: 15px 25px;
     border: none;
