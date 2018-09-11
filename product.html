@@ -57,15 +57,18 @@
                     <div class="col-md-6 ">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Products</a></li>
+                            <li><a href="filters.html">Products</a></li>
                             <li><a href="#">Hot Deals</a></li>
-                            <li><a href="filters.html">About</a></li>
+                            <li><a href="product.html">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 text-right">
                         <div class="shopyIcon">
-                            <i class="fa fa-search"></i>
+                            <div class="search-container">
+                                <input id="fund" type="text" placeholder="search..." class="desapear">
+                                <i id='icon-search' class=" fa fa-search"></i>
+                            </div>
                             <i class="fa fa-user"></i>
                             <i class="fa fa-shopping-basket"></i>
                         </div>
@@ -118,22 +121,30 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Fugiat</p>
                             <p>voluptates soluta sint .</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="intoPart">
-                                    <ul>
-                                        <li><span>Choos Size</span></li>
-                                        <li>S</li>
-                                        <li>M</li>
-                                        <li>L</li>
-                                        <li>XL</li>
-                                    </ul>
-                                    <h5>Price:120$</h5>
+                        <div class="middle-row">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="intoPart">
+                                        <span>Choos Size</span>
+                                        <p>S - M - L - XL </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <div class="choss">
+                                        <p>Choos Quantity + <span>3</span> -</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 text-right">
+                        </div>
+                        <div class="final-row">
+                            <div class="row">
+                            <div class="col-md-5 text-left">
                                 <div class="intoPart2">
-                                    <p>Choos Quantity + <span>3</span> -</p>
+                                    <h5>Price : 120$</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-7 text-right">
+                                <div class="intoPart2">
                                     <div>
                                         <i class="fa fa-globe"></i>
                                         <i class="fa fa-shopping-basket"></i>
@@ -141,6 +152,7 @@
                                     </div>
                                     <button><a href="#">Order Now</a></button>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -164,7 +176,9 @@
             <div class="row bottom-2">
                 <div class="col-md-3">
                     <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        <div class="jack-img">
+                            <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -189,8 +203,10 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="jacket  text-center">    
-                        <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                    <div class="jacket  text-center">   
+                        <div class="jack-img"> 
+                            <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -216,7 +232,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        <div class="jack-img">
+                            <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -242,7 +260,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-3.png" alt="gray jacket">
+                        <div class="jack-img">
+                            <img class="img-fluid" src="assets/img/img-3.png" alt="gray jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -270,7 +290,9 @@
             <div class="row bottom-2 desapear" id="more">
                 <div class="col-md-3">
                     <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        <div class="jack-img">
+                            <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -295,8 +317,10 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="jacket  text-center">    
-                        <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                    <div class="jacket  text-center">   
+                        <div class="jack-img"> 
+                            <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -322,7 +346,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        <div class="jack-img">
+                            <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">
@@ -348,7 +374,9 @@
                 </div>
                 <div class="col-md-3">
                     <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-3.png" alt="gray jacket">
+                        <div class="jack-img">
+                            <img class="img-fluid" src="assets/img/img-3.png" alt="gray jacket">
+                        </div>
                         <p>Reebok Track Jacket</p>
                         <span>100$</span>
                         <div class="home-overlay">

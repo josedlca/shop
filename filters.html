@@ -57,15 +57,18 @@
                     <div class="col-md-6 ">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Products</a></li>
+                            <li><a href="filters.html">Products</a></li>
                             <li><a href="#">Hot Deals</a></li>
-                            <li><a href="filters.html">About</a></li>
+                            <li><a href="product.html">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 text-right">
                         <div class="shopyIcon">
-                            <i class="fa fa-search"></i>
+                                <div class="search-container">
+                                    <input id="fund" type="text" placeholder="search..." class="desapear">
+                                    <i id='icon-search' class=" fa fa-search"></i>
+                                </div>
                             <i class="fa fa-user"></i>
                             <i class="fa fa-shopping-basket"></i>
                         </div>
@@ -84,35 +87,12 @@
                     <div class="filterCard">
                         <ul class="categories">
                             <li><h4>Categories</h4></li>
-                            <li>Man</li>
-                            <li>Women</li>
-                            <li>Childrens</li>
-                            <li>Hot Deals</li>
+                            <li class="categoriesjs" id="man">Man</li>
+                            <li class="categoriesjs" id="women">Women</li>
+                            <li class="categoriesjs" id="childrens">Childrens</li>
+                            <li class="categoriesjs" id="hot">Hot Deals</li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">    
-                        <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
                     <div class="filterCard">
                         <div class="priceFilter">
                             <h4>Price Filter</h4>
@@ -129,77 +109,355 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">    
-                        <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
                     <div class="sizes-brand">
                         <h4>Sizes</h4>
                         <ul>
-                            <li><input type="checkbox" name="small" id="">Small</li>
-                            <li><input type="checkbox" name="Medium" id="">Medium</li>
-                            <li><input type="checkbox" name="large" id="">Large</li>
-                            <li><input type="checkbox" name="xlarge" id="">XLarge</li>
+                            <li><input type="checkbox" name="small" id="sm">Small</li>
+                            <li><input type="checkbox" name="Medium" id="md">Medium</li>
+                            <li><input type="checkbox" name="large" id="lg">Large</li>
+                            <li><input type="checkbox" name="xlarge" id="xl">XLarge</li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">    
-                        <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="jacket  text-center">
-                        <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
-                        <p>Reebok Track Jacket</p>
-                        <span>100$</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
                     <div class="sizes-brand">
                         <h4>Brands</h4>
                         <ul>
-                            <li><input type="checkbox" name="reebok" id="">Reebok</li>
-                            <li><input type="checkbox" name="addidas" id="">Addidas</li>
-                            <li><input type="checkbox" name="nike" id="">Nike</li>
-                            <li><input type="checkbox" name="active" id="">Active</li>
+                            <li><input type="checkbox" name="reebok" id="rebook">Reebok</li>
+                            <li><input type="checkbox" name="addidas" id="addidas">Addidas</li>
+                            <li><input type="checkbox" name="nike" id="nike">Nike</li>
+                            <li><input type="checkbox" name="active" id="active">Active</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9 text-center">
-                    <ul class="bullet white">
+                <div class="col-md-9">
+                    <div class="row" id="template">
+                        <!-- <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd1">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd2">    
+                                <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-2.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd3">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd4">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd5">    
+                                <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-2.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd6">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd7">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd8">    
+                                <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-2.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd9">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row desapear" id="more">
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd10">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd11">    
+                                <img class="img-fluid" src="assets/img/img-2.png" alt="gray jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-2.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 padd-bot">
+                            <div class="jacket  text-center" id="idd12">
+                                <img class="img-fluid" src="assets/img/img-1.png" alt="red jacket">
+                                <p>Reebok Track Jacket</p>
+                                <span>100$</span>
+                                <div class="home-overlay">
+                                    <div class="img-hover-size">
+                                        <img src="assets/img/img-1.png" alt="red jacket">
+                                    </div>
+                                    <h4>Reebok Track Jacket</h4>
+                                    <p>Sizes : s - m - l xl</p>
+                                    <ul class="colors">
+                                        <li class="color-1"></li>
+                                        <li class="color-2"></li>
+                                        <li class="color-3"></li>
+                                        <li class="color-4"></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="icons-overlay">
+                                        <i class="fa fa-globe"></i>
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"  id="deployMore">
+                        <div class="col-md-12 text-center">
+                            <ul class="bullet white">
                         <li></li>
                         <li></li>
                         <li></li>
-                    </ul>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
