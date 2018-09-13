@@ -35,6 +35,13 @@ $(function(){
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
+// ==================================================
+                // priceSlider
+// =================================================//
+$(document).ready(function(){
+    $('#priceSlider').slider();
+});
+
 
 
 let men = document.getElementById("man");
@@ -50,9 +57,8 @@ let addidas = document.getElementById("addidas");
 let nike = document.getElementById("nike");
 let active = document.getElementById("active");
 let template = document.getElementById('template');
-let obj = {
-    "status" : "ok",
-    "results": [
+let obj =
+        [
         {
             "cat" : "women",
             "price" : "120",
@@ -134,8 +140,20 @@ let obj = {
             "color" : ["color-1","color-4"],
             "mediaURL": "https://home.ripley.cl/store/Attachment/WOP/D317/2000357423895/2000357423895_2.jpg"
         }
-    ]
-};
+    ];
+
+function categories(clickCategorie){
+    return _.filter(obj,function(type){return type.cat==clickCategorie });
+}
+
+function size(sizeValue){
+    return _.filter(obj,function(type){
+        const findSize = _.find(type.size,function(i){
+            return i==sizeValue
+        })
+        return findSize !== undefined
+    });
+}
 
 var saveMark = "";
 for(x=0 ; x<obj.results.length ; x++){
@@ -190,6 +208,8 @@ function searchBy(shop_arr, id, item) {
 
     return result;
 }
+
+
 
 men.addEventListener("click",function(){
     var saveMark2 = "";

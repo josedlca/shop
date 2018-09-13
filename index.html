@@ -28,7 +28,7 @@
             <!-- after the nav -->
             <div class="afterNav">
                 <div class="row justify-content-between">
-                    <div class="col-md-3">
+                    <div class="col-12 col-md-5 col-lg-4">
                         <div class="mailNum">
                             <img src="assets/img/Mail-ico.png" alt="Mail-ico">
                             <a href="#">info@shopy.com</a>
@@ -36,7 +36,7 @@
                             <span>453-5553-996</span>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-12 col-md-4 col-lg-3">
                         <div class="socialIcon text-right">
                             <ul>
                                 <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -55,10 +55,12 @@
             <!-- home-nav -->
             <div class="homeNav">
                 <div class="row justify-content-between">
-                    <div class="col-md-2">
-                        <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                    <div class="col-12 col-md-2">
+                        <div class="imgLogo">
+                            <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
+                        </div>
                     </div>
-                    <div class="col-md-6 ">
+                    <div class="col-12 col-md-10 text-md-right col-lg-7">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li><a href="filters.html">Products</a></li>
@@ -67,7 +69,7 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 text-right">
+                    <div class="col-md-12 col-lg-3 text-right">
                         <div class="shopyIcon">
                             <div class="search-container">
                                 <input id="fund" type="text" placeholder="search..." class="desapear">
@@ -90,7 +92,7 @@
                         <h1>FULL WINTER KIT</h1>
                         <h6>Half Jacket + Skiny Trousers + Boot leather</h6>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum iste illum deleniti.</p>
-                        <h5>Price : 120$ <span><i class="fa fa-shopping-basket"></i> Order Now</span></h5>
+                        <h5>Price : 120$  <span><i class="fa fa-shopping-basket"></i> Order Now</span></h5>
                     </div>
                 </div>
             </div>
@@ -353,29 +355,21 @@
     <!-- full winter kit -->
     <section id="fullWinter">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-md-3 text-center padd-right">
-                            <div class="full">
-                                <img src="assets/img/descont.png" alt="descont">
-                            </div>
-                        </div>
-                        <div class="col-md-6 padd-left padd-right">
-                            <div class="full">
-                                <h3>FULL WINTER KIT</h3><br>
-                                <p>Half Jackets + Skiny Trouser + Booth Leather</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 text-center padd-left">
-                            <div class="price white">
-                                <p><i class="fa fa-shopping-cart"></i><span>120</span>$</p>
-                            </div>
-                        </div>
+            <div class="fullWinter">
+                <div class="fullWinter__part1">
+                    <div class="fullWinter__part1-img">
+                        <img src="assets/img/descont.png" alt="descont">
+                    </div>
+                    <div class="fullWinter__part1-description">
+                        <h3>FULL WINTER KIT</h3><br>
+                        <p>Half Jackets + Skiny Trouser + Booth Leather</p>
+                    </div>
+                    <div class="fullWinter__part1-price">
+                        <p><i class="fa fa-shopping-cart"></i><span>120</span>$</p>
                     </div>
                 </div>
-                <div class="col-md-5 adv text-center">
-                    <div>
+                <div class="fullWinter__part2">
+                    <div class="fullWinter__part2-contein">
                         <h6>adv <span>area</span></h6><br>
                         <p>470 x 100</p>
                     </div>

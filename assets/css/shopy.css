@@ -70,6 +70,7 @@ p{
     text-align: center;
     height: 26px;
     border-radius: 50%;
+    transition: .3s all ease;
 }
 .facebook:hover{
     background-color:rgba(26, 94, 153, .5);
@@ -173,10 +174,13 @@ p{
 .slider h5{
     font-size: 1.125rem;
     color: rgb(52, 64, 75);
+    margin: 0;
 }
 .slider h5 span{
     font-size: 1.125rem;
     color: rgb(255, 89, 18);
+    margin-left: .5rem;
+    cursor: pointer;
 }
 /* ================================================
                     arrivals
@@ -216,7 +220,6 @@ p{
     text-align: center;
     display: inline-block;
     margin-bottom: 30px;
-}
 }
 .jacket p{
     display: block;
@@ -347,68 +350,78 @@ p{
     padding-right: 15px !important;
 }
 /* ============================ */
-#fullWinter{
+.fullWinter{
     width: 100%;
-    height: 100%;
+    height: 100px;
     max-height: 100px;
+    display: flex;
 }
-#fullWinter .container,
-#fullWinter .container .row,
-#fullWinter .container .row .full,
-#fullWinter .container .row .price,
-#fullWinter .container .row .adv div{
-    height: 100%;
+.fullWinter__part1{
+    display: flex;
+    background: #fff;
+    width: 58%;
+    /* margin:0 15px 0 15px; */
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2%;
 }
-.full{
-    background-color: #fff;
+.fullWinter__part1-img{
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
-.full img{
-    margin-right: 7.875%;
-    padding: 5.72% 0;
+.fullWinter__part1-description{
+    width: 55%;
 }
-.full h3{
+.fullWinter__part1-price{
+    width: 25%;
+}
+.fullWinter__part1-description h3{
     font-size: 1.375rem;
     font-weight: 900;
     color: rgb(52, 64, 75);
     display: inline-block;
     margin-bottom: 18px;
-    padding-top: 15px;
 }
-.full p{
+.fullWinter__part1-description p{
     font-size: 0.75rem;
     color: rgb(73, 86, 98);
     margin:0;
 }
-.adv{
-    padding-left:15px!important; 
-}
-.adv div{
-    background-color: #fff;
-}
-.price p{
+.fullWinter__part1-price p{
     font-size: 1.187rem;
     color: rgb(255, 89, 18);
     font-weight: 900;
     margin: 0;
-    padding: 12% 0;
 }
-.price p span{
+.fullWinter__part1-price p span{
     font-size: 2.375rem;
     color: rgb(255, 89, 18);
     font-weight: 900;
 }
-.adv h6{
+.fullWinter__part2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.fullWinter__part2-contein{
+    text-align:center;
+}
+.fullWinter__part2-contein h6{
     font-size: 1rem;
     margin-bottom: 3.599%;
-    padding-top: 5%;
 }
-.adv h6 span{
+.fullWinter__part2-contein h6 span{
     color: rgb(255, 89, 18);
 }
-.adv p{
+.fullWinter__part2-contein p{
     font-size: 0.75rem;
     color: rgba(52, 64, 75, 0.4);
     letter-spacing: 6px;
+    margin: 0;
 }
 /* =================================== 
                 best sale
@@ -527,9 +540,9 @@ p{
     padding-top: 60px;
     padding-bottom: 40px
 }
-#footer .row{
+/* #footer .row{
     height: 140px;
-}
+} */
 #footer .row .col-md-4 div{
     padding: 30px 0;
 }
@@ -814,4 +827,45 @@ p{
 }
 .desapear{
     display:none;
+}
+/* =======================================
+                responsive 
+========================================== */
+@media (min-width: 360px) and (max-width: 576px){
+    .mailNum{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .socialIcon{
+        text-align: center!important;
+    }
+    .imgLogo{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .homeNav{
+        padding: 25px 0;
+    }
+    .homeNav a img{
+        width: 180px;
+        height: 60px;
+    }
+    .homeNav ul{
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .homeNav ul li{
+        margin: 0 4px;
+    }
+    .shopyIcon{
+        text-align: center;
+    }
+    .jacket{
+        margin-bottom: 25px;
+        padding: 3.77% 0;
+    }
+    .bottom-2{
+        margin-bottom: 0%;
+    }
 }
