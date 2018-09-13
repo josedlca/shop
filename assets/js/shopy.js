@@ -24,7 +24,7 @@ iconSearch.addEventListener('click',function(){
 // =================================================//
 $(function(){
     $("#saleSlider").owlCarousel({
-        items:1,
+        items:3,
         autoplay:true,
         smartSpeed:400,
         loop:true,
@@ -32,7 +32,18 @@ $(function(){
         nav:true,
         center:true,
         dots:false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            480:{
+                items:2
+            },
+            780:{
+                items:3
+            }
+        }
     });
 });
 // ==================================================
