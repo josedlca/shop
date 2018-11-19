@@ -936,4 +936,7 @@ p{
     #bestSale{
         padding: 60px 0;
     }
+    .introBest p{
+        margin-bottom: 20px;
+    }
 }
