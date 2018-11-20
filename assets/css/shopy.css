@@ -886,6 +886,7 @@ p{
     .homeNav a img{
         width: 180px;
         height: 60px;
+        margin-bottom: 20px;
     }
     .homeNav ul{
         display: block;
