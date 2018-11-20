@@ -568,6 +568,7 @@ p{
     border:2px solid rgb(255, 89, 18);
     transition: .3s ease;
 }
+
 /* =======================================
                 footer
 ========================================== */
@@ -938,5 +939,41 @@ p{
     }
     .introBest p{
         margin-bottom: 20px;
+    }
+    #newLetter .row{
+        height: auto;
+    }
+    .padd-right{
+        padding-right: 15px !important;
+    } 
+    .padd-left{
+        padding-left: 15px !important; 
+    }
+    .insideLetter h5{
+        margin-right: 0;
+    }
+    .insideLetter div{
+        padding: 25px 0;
+    }
+    #newLetter{
+        padding-bottom: 50px;
+    }
+
+    #footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #footer .col-md-2 div{
+        padding: 15px 0;
+    }
+    #footer .row .col-md-4 div{
+        text-align: center;
+    }
+    #footer .col-md-2 ul{
+        list-style: none;
+        padding-left: 15px; 
+    }
+    .homeNav{
+        text-align: center;
     }
 }
