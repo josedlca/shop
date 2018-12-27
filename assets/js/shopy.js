@@ -12,6 +12,21 @@ deployMore.addEventListener('click',function(){
 }); 
 
 // ==================================================
+                // call Json
+// =================================================//
+
+
+fetch('http://localhost/CoursePHP/shopy/allProducts.json')
+.then(res => res.json())
+.catch(error => console.error('Error:', error))
+.then(response => console.log(response))
+
+// ==================================================
+                // call Json
+// =================================================//
+
+
+// ==================================================
                 // input search
 // =================================================//
 iconSearch.addEventListener('click',function(){

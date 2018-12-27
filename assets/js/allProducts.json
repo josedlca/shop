@@ -1,0 +1,11 @@
+{
+    "tipo": "camisa",
+    "url":"https://images-na.ssl-images-amazon.com/images/I/61jsSnf-JsL._SY355_.jpg",
+    "filtros":{
+        "categoria": "man",
+        "price":25,
+        "sizes":["sm","lg"],
+        "brands":"Reebook"
+        }
+}
+            
